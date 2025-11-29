@@ -224,7 +224,7 @@ function Escena2 (){
 
     
     return(
-        <div className="overflow-hidden">
+        <div className="overflow-hidden min-h-screen w-full">
             <div>
                 <div id="fondo">
                     <img
