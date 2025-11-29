@@ -84,7 +84,7 @@ const Escena5: React.FC = () => {
                         ref={(el) => {
                             if (el) cardRefs.current[i] = el;
                         }}
-                        className={`absolute cursor-pointer ${card.width} ${card.height} rounded-2xl`}
+                        className={`absolute ${card.width} ${card.height} rounded-2xl cursor-pointer`}
                         style={{
                             top: card.top,
                             left: card.left,

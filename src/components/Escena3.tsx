@@ -47,14 +47,14 @@ const Escena3: React.FC = () => {
     return (
         <div className="min-h-screen w-full bg-black mt-40">
             <h1  style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-6xl flex justify-center items-center text-center">Our world, <br /> Our Characters</h1>
-            <div className="flex items-center justify-center p-[2vw] mt-10 gap-[2vw]">
+            <div className="flex items-center justify-center p-[2vw] mt-10 gap-[2vw] cursor-pointer">
                 {[0, 1, 2, 3, 4].map((i) => (
                     <div
                         key={i}
                         ref={(el) => {
                             if (el) cardsRef.current[i] = el;
                         }}
-                        className="h-[60vh] w-[25vw] rounded-3xl cursor-pointer relative overflow-hidden"
+                        className="h-[60vh] w-[25vw] rounded-3xl relative overflow-hidden"
                         style={{ rotate: `${Math.floor(Math.random() * 20) - 10}deg` }}
                         onMouseEnter={() => handleMouseEnter(i)}
                         onMouseLeave={() => handleMouseLeave(i)}

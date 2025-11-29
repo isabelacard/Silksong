@@ -76,7 +76,7 @@ function Escena2 (){
         };
 
         const setupBtnHoverAnimation = (btnElement: HTMLDivElement) => {
-            const handleBtnMouseEnter = () => { gsap.to(btnElement, { scale: 1.01, filter: "drop-shadow(0 0 10px #E00707)", cursor: 'pointer', duration: 0.3, ease: "power2.out" }); };
+            const handleBtnMouseEnter = () => { gsap.to(btnElement, { scale: 1.01, filter: "drop-shadow(0 0 10px #E00707)", duration: 0.3, ease: "power2.out" }); };
             const handleBtnMouseLeave = () => { gsap.to(btnElement, { scale: 1, filter: "drop-shadow(0 0 0px #E00707)", duration: 0.3, ease: "power2.out" }); };
             btnElement.addEventListener("mouseenter", handleBtnMouseEnter);
             btnElement.addEventListener("mouseleave", handleBtnMouseLeave);
@@ -316,20 +316,20 @@ function Escena2 (){
                             <div className="js-typing-container">
                                 <p style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
                                 className="absolute bottom-98 text-3xl z-2 left-253 text-white js-typing-word
-                                hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all cursor-pointer
-                                hover:text-amber-300">
+                                hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all 
+                                hover:text-amber-300 cursor-pointer">
                                 NOMINEE</p>
                             </div>
                         </div>
 
-                        <div id="Boton" ref={btnRef} className="cursor-pointer">    
+                        <div id="Boton" ref={btnRef} >    
                             <img 
                             src={Btn}
-                            className="absolute bottom-80 left-270 w-35"></img>
+                            className="absolute bottom-80 left-270 w-35 cursor-pointer"></img>
 
                             <p
                             style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
-                            className="absolute bottom-81 z-2 left-277 text-white">
+                            className="absolute bottom-81 z-2 left-277 text-white cursor-pointer">
                             View More</p>
                         </div>
 
