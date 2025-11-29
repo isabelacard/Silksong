@@ -7,10 +7,12 @@ import Escena5 from './components/Escena5'
 import FooterFinal from './components/Footer'
 import Escena2 from './components/Escena2'
 import Navbar from './components/Navbar'
+import Relleno from './components/RellenoRojo'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Navbar/>
+    <Relleno/>
     <Escena2/>
     <Escena3/>
     <Escena4/>
