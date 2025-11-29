@@ -8,7 +8,11 @@ import Navbar from './components/Navbar'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+<<<<<<< HEAD
     <Navbar/>
+=======
+    <Escena2/>
+>>>>>>> 4239d2ce9c9a2a6fd4999b82cf2448b5ac671377
     <Escena3/>
     <Escena4/>
     <Escena5/>
