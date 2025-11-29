@@ -231,16 +231,16 @@ function Escena2 (){
                     className="flex relative right-2 w-full scale-102" 
                     src={FondoEscena2}>
                     </img>
-                    <div className="relative z-10 w-full h-full">
+                    <div className="relative z-10 vw-full h-full">
                         
                         <img
                         ref={hornetRef}
-                        className="absolute bottom-30 left-45 w-230 z-10 pointer-events-none" 
+                        className="absolute bottom-30 left-45 w-[60vw] z-10 pointer-events-none" 
                         src={Hornet}></img>
 
                         <img
                         ref={shakraRef}
-                        className="absolute bottom-95 z-1 left-140 w-95" 
+                        className="absolute bottom-95 z-1 left-140 w-[25vw]" 
                         src={Shakra}></img>
 
                         {/* --- CUADRO 1: 500k Players --- */}
@@ -255,7 +255,7 @@ function Escena2 (){
                             {cuadro1SubText}</p>
                             <img 
                             ref={cuadro1ImgRef} // Ref para la imagen para cambiar el color
-                            className="absolute bottom-160 w-100 left-40"
+                            className="absolute bottom-160 w-[27vw] left-40"
                             src={Cuadro1Img}></img> {/* Usar Cuadro1Img renombrado */}
                         </div>
 
@@ -270,7 +270,7 @@ function Escena2 (){
                             {cuadro2SubText}</p>
                             <img 
                             ref={cuadro2ImgRef}
-                            className="absolute bottom-122 w-80 left-60"
+                            className="absolute bottom-122 w-[20vw] left-60"
                             src={Cuadro2Img}></img>
                         </div>
 
@@ -285,7 +285,7 @@ function Escena2 (){
                             {cuadro3SubText}</p>
                             <img 
                             ref={cuadro3ImgRef}
-                            className="absolute bottom-85 w-130 left-40"
+                            className="absolute bottom-85 w-[35vw] left-40"
                             src={Cuadro3Img}></img>
                         </div>
 
@@ -294,7 +294,7 @@ function Escena2 (){
                         <div id="TituloAnimado">
                             <div className="js-typing-container">
                                 <p style={{ fontFamily: "Trajan Pro", fontWeight:"bold" }} 
-                                className="absolute bottom-140 text-8xl z-2 left-240 text-white js-typing-word
+                                className="absolute bottom-137 text-[5vw] z-2 left-240 text-white js-typing-word
                                 hover:text-red-500 transition-all cursor-pointer">
                                 GAME</p>
                             </div>
