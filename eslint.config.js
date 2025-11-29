@@ -1,23 +1,52 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import tseslint from 'typescript-eslint'
-import { defineConfig, globalIgnores } from 'eslint/config'
+import { defineConfig } from "eslint/config";
+import { FlatCompat } from "@eslint/eslintrc";
+import eslintRecommended from "@eslint/js";
+
+const compat = new FlatCompat({
+    baseDirectory: import.meta.dirname || process.cwd(),
+    recommendedConfig: eslintRecommended.configs.recommended,
+});
 
 export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      js.configs.recommended,
-      tseslint.configs.recommended,
-      reactHooks.configs.flat.recommended,
-      reactRefresh.configs.vite,
-    ],
-    languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
-    },
-  },
-])
+    ...compat.config({
+        extends: ["plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:@typescript-eslint/recommended", "eslint:recommended", "plugin:import/recommended", "plugin:import/typescript", "prettier"],
+        env: {
+            browser: true,
+            node: true,
+        },
+        // ...existing code...
+        rules: {
+            "react/prop-types": 0,
+            "react/react-in-jsx-scope": "off",
+            "max-len": ["error", { code: 250 }],
+            quotes: ["error", "double"],
+            "no-unused-vars": [
+                "error",
+                {
+                    vars: "all",
+                    args: "all",
+                    argsIgnorePattern: "^_",
+                },
+            ],
+            "@typescript-eslint/no-explicit-any": "off",
+            "import/order": "off",
+            "import/no-unresolved": "off",
+            "import/named": "off",
+            "import/default": "off",
+            "import/namespace": "off",
+            indent: ["error", 4],
+            "no-multiple-empty-lines": ["error", { max: 1, maxEOF: 1 }],
+            "block-spacing": "error",
+            semi: ["error", "always"],
+            camelcase: "off",
+            "no-console": ["error", { allow: ["info", "warn", "error"] }],
+        },
+
+        ignorePatterns: ["dist", "build", "vite.config.ts", "eslint.config.js"],
+        settings: {
+            react: {
+                version: "detect",
+            },
+        },
+    }),
+]);

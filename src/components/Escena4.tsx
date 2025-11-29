@@ -27,7 +27,7 @@ const Escena3: React.FC = () => {
             const text = block.querySelector(".js-text");
             const image = block.querySelector(".js-image");
             const handleMouseEnter = () => {
-             
+            
                 gsap.to(title, { 
                     color: "#E00707", 
                     scale: 1.05, 
@@ -77,7 +77,7 @@ const Escena3: React.FC = () => {
     }, []); 
 
     return (
-        <div className=" mt-25">
+        <div className=" mt-18">
             <div>
                 <p className="text-white text-7xl flex justify-end mr-50">Pharloom</p>
                 <p className="text-[#E00707] text-5xl font-bold flex justify-end mr-50">History</p>
