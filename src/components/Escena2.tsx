@@ -245,7 +245,7 @@ function Escena2 (){
 
                         {/* --- CUADRO 1: 500k Players --- */}
                         {/* El div padre tiene la animación de hover/click */}
-                        <div id="cuadro1-container">
+                        <div id="cuadro1-container" className="cursor-pointer">
                             <p
                             style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} 
                             className="absolute bottom-172 text-3xl z-2 left-65 text-white">{cuadro1MainText}</p>
@@ -260,7 +260,7 @@ function Escena2 (){
                         </div>
 
                         {/* --- CUADRO 2: 3 Million --- */}
-                        <div id="cuadro2-container">
+                        <div id="cuadro2-container" className="cursor-pointer">
                             <p
                             style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} 
                             className="absolute bottom-135 text-3xl z-2 left-75 text-white">{cuadro2MainText}</p>
@@ -275,7 +275,7 @@ function Escena2 (){
                         </div>
 
                         {/* --- CUADRO 3: Number 1 --- */}
-                        <div id="cuadro3-container">
+                        <div id="cuadro3-container" className="cursor-pointer">
                             <p
                             style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} 
                             className="absolute bottom-96 text-3xl z-2 left-70 text-white">{cuadro3MainText}</p>
@@ -295,21 +295,21 @@ function Escena2 (){
                             <div className="js-typing-container">
                                 <p style={{ fontFamily: "Trajan Pro", fontWeight:"bold" }} 
                                 className="absolute bottom-140 text-8xl z-2 left-240 text-white js-typing-word
-                                hover:text-red-500 transition-all ">
+                                hover:text-red-500 transition-all cursor-pointer">
                                 GAME</p>
                             </div>
 
                             <div className="js-typing-container">
                                 <p style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
                                 className="absolute bottom-128 text-5xl z-2 left-265 text-white js-typing-word
-                                hover:text-red-600 transition-all ">
+                                hover:text-red-600 transition-all cursor-pointer">
                                 OF THE</p>
                             </div>
 
                             <div className="js-typing-container">
                                 <p style={{ fontFamily: "Trajan Pro", fontWeight:"bold" }} 
                                 className="absolute bottom-108 text-7xl z-2 left-260 text-white js-typing-word
-                                hover:text-red-500 transition-all ">
+                                hover:text-red-500 transition-all cursor-pointer">
                                 YEAR</p>
                             </div>
 
@@ -317,7 +317,7 @@ function Escena2 (){
                                 <p style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
                                 className="absolute bottom-98 text-3xl z-2 left-253 text-white js-typing-word
                                 hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all 
-                                hover:text-amber-300">
+                                hover:text-amber-300 cursor-pointer">
                                 NOMINEE</p>
                             </div>
                         </div>
@@ -325,11 +325,11 @@ function Escena2 (){
                         <div id="Boton" ref={btnRef} >    
                             <img 
                             src={Btn}
-                            className="absolute bottom-80 left-270 w-35"></img>
+                            className="absolute bottom-80 left-270 w-35 cursor-pointer"></img>
 
                             <p
                             style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
-                            className="absolute bottom-81 z-2 left-277 text-white">
+                            className="absolute bottom-81 z-2 left-277 text-white cursor-pointer">
                             View More</p>
                         </div>
 
@@ -337,7 +337,7 @@ function Escena2 (){
                         <p
                         ref={textRef1}
                         style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
-                        className="absolute bottom-167 z-11 text-[10px] left-235 w-70 text-white">
+                        className="absolute bottom-167 z-11 text-[10px] left-235 w-70 text-white cursor-pointer">
                         Hollow Knight: Silksong has secured a major Game of the Year "GOTY" 
                         nomination at The Game Awards 2025. This recognition highlights the 
                         enormous anticipation and quality of the game.
@@ -347,7 +347,7 @@ function Escena2 (){
                         <p
                         ref={textRef2}
                         style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
-                        className="absolute bottom-70 z-11 text-[10px] left-45 w-70 text-white">
+                        className="absolute bottom-70 z-11 text-[10px] left-45 w-70 text-white cursor-pointer">
                         The launch of Hollow Knight: Silksong was a resounding success, 
                         exceeding expectations with impressive sales figures and exceptional 
                         critical acclaim.</p>

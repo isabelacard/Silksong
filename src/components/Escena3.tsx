@@ -47,7 +47,7 @@ const Escena3: React.FC = () => {
     return (
         <div className="min-h-screen w-full bg-black mt-40">
             <h1  style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-6xl flex justify-center items-center text-center">Our world, <br /> Our Characters</h1>
-            <div className="flex items-center justify-center p-[2vw] mt-10 gap-[2vw]">
+            <div className="flex items-center justify-center p-[2vw] mt-10 gap-[2vw] cursor-pointer">
                 {[0, 1, 2, 3, 4].map((i) => (
                     <div
                         key={i}

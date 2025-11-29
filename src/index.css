@@ -3,5 +3,15 @@
 body {
     background-color: black;
     cursor: url('/cursor/CursorSilksong.png') 8 8, auto;
-    
+}
+
+.cursor-pointer {
+    /* Cursor de 'mano': Imagen Silksong Pointer (reserva 'pointer') */
+    /* !important puede ser necesario para anular estilos predefinidos de Tailwind en algunos navegadores/versiones. */
+    cursor: url('/cursor/CursorSilksongPointer.png') 16 16, pointer !important; 
+}
+
+/* Si quieres que los enlaces también cambien por defecto (sin la clase Tailwind): */
+a, button, input[type="submit"] {
+    cursor: url('/cursor/CursorSilksongPointer.png') 8 8, pointer;
 }
