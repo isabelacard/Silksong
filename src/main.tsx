@@ -8,6 +8,7 @@ import Escena5 from './components/Escena5'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <Escena2/>
     <Escena3/>
     <Escena4/>
     <Escena5/>

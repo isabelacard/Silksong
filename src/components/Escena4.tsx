@@ -79,7 +79,7 @@ const Escena3: React.FC = () => {
     return (
         <div className=" mt-18">
             <div>
-                <p className="text-white text-7xl flex justify-end mr-50">Pharloom</p>
+                <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-6xl flex justify-end mr-50">Pharloom</p>
                 <p className="text-[#E00707] text-5xl font-bold flex justify-end mr-50">History</p>
             </div>
             
