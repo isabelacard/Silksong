@@ -2,4 +2,6 @@
 
 body {
     background-color: black;
+    cursor: url('/cursor/CursorSilksong.png') 8 8, auto;
+    
 }

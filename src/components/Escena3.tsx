@@ -54,7 +54,7 @@ const Escena3: React.FC = () => {
                         ref={(el) => {
                             if (el) cardsRef.current[i] = el;
                         }}
-                        className="h-[60vh] w-[25vw] rounded-3xl cursor-pointer relative overflow-hidden"
+                        className="h-[60vh] w-[25vw] rounded-3xl relative overflow-hidden"
                         style={{ rotate: `${Math.floor(Math.random() * 20) - 10}deg` }}
                         onMouseEnter={() => handleMouseEnter(i)}
                         onMouseLeave={() => handleMouseLeave(i)}

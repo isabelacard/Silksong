@@ -85,7 +85,7 @@ const Escena3: React.FC = () => {
             
             <div className="bg-black min-h-screen flex flex-col items-center justify-center ">
                 
-                <div ref={block1Ref} className="flex flex-row gap-7 justify-center items-center absolute cursor-pointer">
+                <div ref={block1Ref} className="flex flex-row gap-7 justify-center items-center absolute">
                     <div className="flex flex-col text-right">
                         <div className="flex flex-col js-title">
                             <p className="text-white text-5xl font-medium">The Rise of</p>
@@ -103,7 +103,7 @@ const Escena3: React.FC = () => {
                     <img src={Imagen1} alt="Hornet" className="w-100 h-auto js-image" />
                 </div>
 
-                <div ref={block2Ref} className="flex flex-row gap-5 justify-center items-center absolute mt-210 cursor-pointer">
+                <div ref={block2Ref} className="flex flex-row gap-5 justify-center items-center absolute mt-210">
                     <img src={Imagen2} alt="Carmelita" className="w-100 h-auto js-image" />
                     <div className="flex flex-col text-left">
                         <div className="flex flex-col js-title">
@@ -121,7 +121,7 @@ const Escena3: React.FC = () => {
                     </div>
                 </div>
 
-                <div ref={block3Ref} className="flex flex-row justify-center items-center absolute mt-410 z-2 cursor-pointer">
+                <div ref={block3Ref} className="flex flex-row justify-center items-center absolute mt-410 z-2">
                     <div className="flex flex-col text-right items-end">
                         <div className="flex flex-col js-title">
                             <p className="text-white text-5xl font-medium">The Appearance</p>
@@ -140,7 +140,7 @@ const Escena3: React.FC = () => {
                     <img src={Imagen3} alt="Lace" className="ml-[-15px] w-120 h-auto js-image" />
                 </div>
 
-                <div ref={block4Ref} className="flex flex-row gap-7 justify-center items-center absolute mt-610 z-1 cursor-pointer">
+                <div ref={block4Ref} className="flex flex-row gap-7 justify-center items-center absolute mt-610 z-1">
                     <img src={Imagen4} alt="seth" className="w-100 h-auto js-image" />
                     <div className="flex flex-col text-left">
                         <div className="flex flex-col js-title">
@@ -158,7 +158,7 @@ const Escena3: React.FC = () => {
                     </div>
                 </div>
 
-                <div ref={block5Ref} className="flex flex-row gap-7 justify-center items-center absolute mt-810 cursor-pointer">
+                <div ref={block5Ref} className="flex flex-row gap-7 justify-center items-center absolute mt-810">
                     <div className="flex flex-col text-right items-end mb-30">
                         <div className="flex flex-col js-title">
                             <p className="text-white text-5xl font-medium">The Awakening </p>
