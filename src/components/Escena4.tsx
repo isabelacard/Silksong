@@ -16,7 +16,6 @@ const Escena3: React.FC = () => {
     const block4Ref = useRef(null);
     const block5Ref = useRef(null);
 
-   
     const blocks = [block1Ref, block2Ref, block3Ref, block4Ref, block5Ref];
 
     useEffect(() => {
