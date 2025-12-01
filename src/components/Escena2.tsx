@@ -227,7 +227,7 @@ function Escena2 (){
         <div className="overflow-hidden w-full h-screen relative">
             <div className="w-full h-full absolute inset-0">
                 <img
-                    className="flex relative right-2 w-full scale-102" 
+                    className="flex relative right-2 w-full scale-102 overflow-hidden" 
                     src={FondoEscena2}
                     alt="Fondo"
                 />
