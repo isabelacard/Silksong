@@ -145,10 +145,10 @@ function FooterFinal() {
 
 
     return (
-        <div ref={footerRef} className="bg-black pt-10">
+        <div ref={footerRef} className="bg-black pt-10 relative" >
             
           
-            <div ref={lineTopRef} className="h-0.5 bg-red-600 ml-20 mr-20 mb-20"></div>
+            <div ref={lineTopRef} className="h-0.5 bg-white ml-20 mr-20 mb-20"></div>
             
             <div className="flex h-60 ml-20 mr-20 justify-between items-start">
                 
@@ -211,13 +211,13 @@ function FooterFinal() {
                     <form typeof="submit" className="flex flex-col w-70">
                         <input className="rounded-4xl bg-white h-8 pl-3 pr-3 mb-2" placeholder="Enter your Email"></input>
                         {/* El botón tendrá animación de hover */}
-                        <button ref={subscribeButtonRef} className="bg-red-700 rounded-4xl h-8 cursor-pointer text-white" style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }}>Subscribe</button>
+                        <button ref={subscribeButtonRef} className="bg-[#960000] rounded-4xl h-8 cursor-pointer text-white" style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }}>Subscribe</button>
                     </form>
                 </div>
             </div>
 
             {/* LÍNEA INFERIOR */}
-            <div ref={lineBottomRef} className="h-0.5 bg-red-600 ml-20 mr-20 mb-20"></div>
+            <div ref={lineBottomRef} className="h-0.5 bg-white ml-20 mr-20 mb-20"></div>
 
             {/* COPYRIGHT Y LEGAL */}
             <div className="ml-20 mb-15 mr-20 flex justify-between">
