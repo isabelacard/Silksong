@@ -275,13 +275,13 @@ function Escena2 (){
                     <div id="cuadro2-container" className="cursor-pointer absolute bottom-[45vh] left-[12.5vw] w-[20vw] h-[13vh]">
                         <p
                             style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} 
-                            className="absolute bottom-[12vh] text-[2vw] z-2 left-[8vw] text-white whitespace-nowrap"
+                            className="absolute bottom-[12vh] text-[2vw] z-2 left-[9vw] text-white whitespace-nowrap"
                         >
                             {cuadro2MainText}
                         </p>
                         <p
                             style={{ fontFamily: "Poppins" }} 
-                            className="absolute bottom-[11vh] text-[0.7vw] z-2 left-[8vw] text-white whitespace-nowrap"
+                            className="absolute bottom-[11vh] text-[0.7vw] z-2 left-[9vw] text-white whitespace-nowrap"
                         >
                             {cuadro2SubText}
                         </p>
@@ -297,13 +297,13 @@ function Escena2 (){
                     <div id="cuadro3-container" className="cursor-pointer absolute bottom-[31.5vh] left-[8.3vw] w-[35vw] h-[15vh]">
                         <p
                             style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} 
-                            className="absolute bottom-[4vh] text-[1.5vw] z-2 left-[6vw] text-white whitespace-nowrap"
+                            className="absolute bottom-[6vh] text-[2vw] z-2 left-[10vw] text-white whitespace-nowrap"
                         >
                             {cuadro3MainText}
                         </p>
                         <p
                             style={{ fontFamily: "Poppins" }} 
-                            className="absolute bottom-[1vh] text-[0.5vw] z-2 left-[6vw] text-white whitespace-nowrap"
+                            className="absolute bottom-[5vh] text-[0.7vw] z-2 left-[10vw] text-white whitespace-nowrap"
                         >
                             {cuadro3SubText}
                         </p>
@@ -320,35 +320,36 @@ function Escena2 (){
                     <div id="TituloAnimado">
                         <div className="js-typing-container">
                             <p style={{ fontFamily: "Trajan Pro", fontWeight:"bold" }} 
-                            className="absolute bottom-[51vh] text-[5vw] z-2 left-[50vw] text-white js-typing-word
+                            className="absolute bottom-[60vh] text-[6vw] z-2 left-[63vw] text-white js-typing-word
                             hover:text-red-500 transition-all cursor-pointer">
                             GAME</p>
                         </div>
 
                         <div className="js-typing-container">
                             <p style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
-                            className="absolute bottom-[47.4vh] text-[2.5vw] z-2 left-[55vw] text-white js-typing-word
+                            className="absolute bottom-[57vh] text-[2.5vw] z-2 left-[67vw] text-white js-typing-word
                             hover:text-red-600 transition-all cursor-pointer">
                             OF THE</p>
                         </div>
 
                         <div className="js-typing-container">
                             <p style={{ fontFamily: "Trajan Pro", fontWeight:"bold" }} 
-                            className="absolute bottom-[40vh] text-[3.5vw] z-2 left-[54vw] text-white js-typing-word
+                            className="absolute bottom-[42vh] text-[6vw] z-2 left-[67vw] text-white js-typing-word
                             hover:text-red-500 transition-all cursor-pointer">
                             YEAR</p>
                         </div>
 
                         <div className="js-typing-container">
                             <p style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
-                            className="absolute bottom-[36.3vh] text-[1.5vw] z-2 left-[52.7vw] text-white js-typing-word
-                            hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all 
+                            className="absolute bottom-[39vh] text-[2.1vw] z-2 left-[65vw] text-white js-typing-word
+                            hover:drop-shadow-lg hover:drop-shadow-amber-200 transition-all
                             hover:text-amber-300 cursor-pointer">
                             NOMINEE</p>
                         </div>
                     </div>
 
-                    <div id="Boton" ref={btnRef} className="absolute bottom-[29.6vh] left-[56vw] w-[7.3vw] h-auto cursor-pointer">    
+                    <div id="Boton" ref={btnRef} className="absolute bottom-[31vh] 
+                    left-[71vw] w-[7.3vw] h-auto cursor-pointer">
                         <img 
                             src={Btn}
                             className="w-full"
@@ -367,7 +368,7 @@ function Escena2 (){
                     <p
                         ref={textRef1}
                         style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
-                        className="absolute bottom-[62vh] z-11 text-[0.6vw] left-[49vw] w-[15vw] text-white cursor-pointer"
+                        className="absolute bottom-[77vh] z-11 text-[0.6vw] left-[60vw] w-[18vw] text-white cursor-pointer"
                     >
                         Hollow Knight: Silksong has secured a major Game of the Year "GOTY" 
                         nomination at The Game Awards 2025. This recognition highlights the 
@@ -378,7 +379,7 @@ function Escena2 (){
                     <p
                         ref={textRef2}
                         style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
-                        className="absolute bottom-[26vh] z-11 text-[0.6vw] left-[9vw] w-[15vw] text-white cursor-pointer"
+                        className="absolute bottom-[24vh] z-11 text-[0.6vw] left-[9vw] w-[18vw] text-white cursor-pointer"
                     >
                         The launch of Hollow Knight: Silksong was a resounding success, 
                         exceeding expectations with impressive sales figures and exceptional 
