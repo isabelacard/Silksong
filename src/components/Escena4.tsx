@@ -77,12 +77,12 @@ const Escena3: React.FC = () => {
 
     return (
         <div className=" mt-18">
-            <div>
-                <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-6xl flex justify-end mr-50">Pharloom</p>
-                <p style={{ fontFamily: "Trajan Pro", fontWeight: "900" }} className="text-[#E00707] text-5xl font-bold flex justify-end mr-50">History</p>
+            <div className="flex flex-col justify-center items-center">
+                <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-6xl flex justify-end">Pharloom</p>
+                <p style={{ fontFamily: "Trajan Pro", fontWeight: "900" }} className="text-[#E00707] text-5xl font-bold flex justify-end">History</p>
             </div>
             
-            <div className="bg-black min-h-screen flex flex-col items-center justify-center ">
+            <div className="bg-black min-h-screen flex flex-col items-center justify-center -mt-15">
                 
                 <div ref={block1Ref} className="flex flex-row gap-7 justify-center items-center absolute cursor-pointer">
                     <div className="flex flex-col text-right">
