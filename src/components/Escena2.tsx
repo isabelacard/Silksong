@@ -364,8 +364,7 @@ function Escena2 (){
                         </p>
                     </div>
 
-                    {/* Párrafo 1 con hover */}
-                    <p
+                    {/* <p
                         ref={textRef1}
                         style={{ fontFamily: "Poppins", fontWeight: "400"}}
                         className="absolute bottom-[77vh] z-11 text-[0.6vw] left-[60vw] w-[18vw] text-white cursor-pointer"
@@ -375,7 +374,7 @@ function Escena2 (){
                         enormous anticipation and quality of the game.
                     </p>
 
-                    {/* Párrafo 2 con hover */}
+                    
                     <p
                         ref={textRef2}
                         style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
@@ -384,7 +383,7 @@ function Escena2 (){
                         The launch of Hollow Knight: Silksong was a resounding success, 
                         exceeding expectations with impressive sales figures and exceptional 
                         critical acclaim.
-                    </p>
+                    </p> */}
                 </div>
             </div>
         </div>
