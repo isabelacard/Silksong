@@ -14,7 +14,7 @@ const Escena7: React.FC = () => {
         {
             id: 1,
             content: (
-                <div className="h-full w-full bg-[#000000] rounded-2xl p-[6vh] flex flex-col justify-center text-[#f3d7c6] relative overflow-hidden">
+                <div className="h-full w-full bg-[#000000] rounded-2xl p-[6vh] flex flex-col justify-center text-[#ffffff] relative overflow-hidden">
                     <h1 style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-8xl font-black tracking-tight text-[#E00707] drop-shadow-[0_0_25px_rgba(196,43,50,0.7)]">
                         Silksong
                     </h1>
@@ -39,7 +39,7 @@ const Escena7: React.FC = () => {
         {
             id: 2,
             content: (
-                <div className="h-full w-full bg-[#12080b] rounded-2xl p-[6vh] flex flex-col justify-center text-[#f5e9dd] overflow-y-auto">
+                <div className="h-full w-full bg-[#12080b] rounded-2xl p-[6vh] flex flex-col justify-center text-[#ffffff] overflow-y-auto">
                     <h1 style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-6xl font-bold tracking-tight mb-8 text-[#E00707]">
                         Frequently Asked Questions
                     </h1>
@@ -97,7 +97,7 @@ const Escena7: React.FC = () => {
         {
             id: 3,
             content: (
-                <div className="h-full w-full bg-[#110809] rounded-2xl p-[6vh] flex flex-col justify-center text-[#ffe9d6]">
+                <div className="h-full w-full bg-[#110809] rounded-2xl p-[6vh] flex flex-col justify-center text-[#ffffff]">
                     <h1 style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-6xl font-extrabold tracking-tight text-[#E00707] drop-shadow-[0_0_15px_#ff696155]">
                         Platforms
                     </h1>
@@ -129,7 +129,7 @@ const Escena7: React.FC = () => {
         {
             id: 4,
             content: (
-                <div className="h-full w-full bg-black rounded-2xl p-[6vh] flex flex-col justify-center text-[#e8d0c3] relative">
+                <div className="h-full w-full bg-black rounded-2xl p-[6vh] flex flex-col justify-center text-[#ffffff] relative">
                     <h1 style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-7xl font-extrabold tracking-tight text-[#E00707] drop-shadow-[0_0_35px_#ff3b3baa]">
                         Thank You for Waiting
                     </h1>
