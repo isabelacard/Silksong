@@ -1,12 +1,12 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-import Final1 from "../assets/escena6Images/Final1.png";
-import Final2 from "../assets/escena6Images/Final2.png";
-import Final3 from "../assets/escena6Images/Final3.png";
-import Final4 from "../assets/escena6Images/Final4.png";
-import Final5 from "../assets/escena6Images/Final5.png";
-import Lace from "../assets/escena6Images/LaceFinal.png";
+import Final1 from "../../public/escena6Images/Final1.png";
+import Final2 from "../../public/escena6Images/Final2.png";
+import Final3 from "../../public/escena6Images/Final3.png";
+import Final4 from "../../public/escena6Images/Final4.png";
+import Final5 from "../../public/escena6Images/Final5.png";
+import Lace from "../../public/escena6Images/LaceFinal.png";
 
 function CardFinal({ src, className, text }) {
     const textRef = useRef(null);
