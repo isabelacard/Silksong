@@ -10,6 +10,7 @@ const Navbar: React.FC = () => {
     useEffect(() => {
         const links = navRef.current?.querySelectorAll("a");
 
+        // LOGO FLOAT ANIMATION
         gsap.to(logoRef.current, {
             y: -10,
             duration: 1,
@@ -18,6 +19,7 @@ const Navbar: React.FC = () => {
             ease: "power1.inOut",
         });
 
+        // CHERRY BREATHING ANIMATION
         gsap.to(cherryRef.current, {
             opacity: 0.6,
             duration: 2,
@@ -26,6 +28,7 @@ const Navbar: React.FC = () => {
             ease: "power2.inOut",
         });
 
+        // BUTTON HOVER
         const btn = buttonRef.current;
 
         btn?.addEventListener("mouseenter", () => {
@@ -63,18 +66,17 @@ const Navbar: React.FC = () => {
         btn?.addEventListener("mouseleave", () => {
             gsap.to(btn, {
                 scale: 1,
-                boxShadow: "0 0 0px rgba(255,255,255,0)",
-                duration: 0.6, 
-                ease: "power2.out", 
+                boxShadow: "0 0 0 rgba(255,255,255,0)",
+                duration: 0.6,
+                ease: "power2.out",
             });
         });
 
-        // LINKS
+        // LINKS EFFECT
         links?.forEach((link) => {
             const underline = document.createElement("span");
             underline.className = "block absolute left-0 bottom-[-4px] h-[2px] bg-white w-0 pointer-events-none";
             link.appendChild(underline);
-
             link.style.position = "relative";
 
             link.addEventListener("mouseenter", () => {
@@ -114,6 +116,17 @@ const Navbar: React.FC = () => {
                 });
             });
         });
+
+        const onScroll = () => {
+            if (window.scrollY > 20) {
+                navRef.current?.classList.add("scrolled");
+            } else {
+                navRef.current?.classList.remove("scrolled");
+            }
+        };
+
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
     const spawnParticles = (parent: HTMLElement, amount: number, color: string) => {
@@ -148,15 +161,19 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 px-8 py-4">
+        <nav className="nav-fade fixed top-0 left-0 w-full z-50 px-8 py-4">
             <div ref={navRef} className="flex items-center justify-between max-w-[1920px] h-27 mx-auto">
                 <div className="flex items-center ml-10">
                     <img ref={cherryRef} src="../../public/navbar/TEAMCHERRY.png" className="h-13 cursor-pointer" />
                 </div>
 
                 <div className="flex items-center mr-10 gap-12 text-white font-trajan text-lg">
-                    <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer" >ABOUT</a>
-                    <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] mr-40 cursor-pointer">CHARACTERS</a>
+                    <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">
+                        ABOUT
+                    </a>
+                    <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] mr-40 cursor-pointer">
+                        CHARACTERS
+                    </a>
                 </div>
 
                 <div className="absolute left-1/2 transform -translate-x-1/2">
@@ -164,9 +181,13 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <div className="flex items-center gap-12 mr-10">
-                    <div className="flex gap-12 text-white font-trajan text-lg ">
-                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">HISTORY</a>
-                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">MAPS</a>
+                    <div className="flex gap-12 text-white font-trajan text-lg">
+                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">
+                            HISTORY
+                        </a>
+                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">
+                            MAPS
+                        </a>
                     </div>
 
                     <button style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} ref={buttonRef} className="relative border-2 border-white text-white px-8 py-2 font-trajan overflow-hidden">

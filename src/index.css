@@ -15,3 +15,13 @@ body {
 a, button, input[type="submit"] {
     cursor: url('/cursor/CursorSilksongPointer.png') 8 8, pointer;
 }
+
+.nav-fade {
+    background: rgba(0, 0, 0, 0);      /* transparente al inicio */
+    transition: background 0.8s ease;  /* fade suave */
+    backdrop-filter: blur(6px);        /* opcional */
+}
+
+.nav-fade.scrolled {
+    background: rgba(0, 0, 0, 0.85);   /* aparece el fondo negro */
+}
