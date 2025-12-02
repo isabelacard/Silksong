@@ -1,18 +1,18 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import Front1 from "../assets/imagesfront/front1.png";
-import Front2 from "../assets/imagesfront/front2.png";
-import Front3 from "../assets/imagesfront/front3.png";
-import Front4 from "../assets/imagesfront/front4.png";
-import Front5 from "../assets/imagesfront/front5.png";
-import Front6 from "../assets/imagesfront/front6.png";
-import Back1 from "../assets/imagesback/back1.png";
-import Back2 from "../assets/imagesback/back2.png";
-import Back3 from "../assets/imagesback/back3.png";
-import Back4 from "../assets/imagesback/back4.png";
-import Back5 from "../assets/imagesback/back5.png";
-import Back6 from "../assets/imagesback/back6.png";
-import Background from "../assets/fondos/Group30.png";
+import Front1 from "../../public/imagesfront/front1.png";
+import Front2 from "../../public/imagesfront/front2.png";
+import Front3 from "../../public/imagesfront/front3.png";
+import Front4 from "../../public/imagesfront/front4.png";
+import Front5 from "../../public/imagesfront/front5.png";
+import Front6 from "../../public/imagesfront/front6.png";
+import Back1 from "../../public/imagesback/back1.png";
+import Back2 from "../../public/imagesback/back2.png";
+import Back3 from "../../public/imagesback/back3.png";
+import Back4 from "../../public/imagesback/back4.png";
+import Back5 from "../../public/imagesback/back5.png";
+import Back6 from "../../public/imagesback/back6.png";
+import Background from "../../public/fondos/Group30.png";
 
 const cards = [
     { id: 1, imgFront: Front1, imgBack: Back1, top: "10%", left: "31%", width: "w-56", height: "h-56" },

@@ -1,9 +1,9 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
-import Rectangle2 from "../assets/banner/Rectangle 2.png";
-import Cloud5 from "../assets/banner/9 5.png";
-import Cloud4 from "../assets/banner/9 4.png";
-import HornetBanner from "../assets/banner/Hornet_banner_wide-1-Photoroom 1.png";
+import Rectangle2 from "../../public/banner/Rectangle 2.png";
+import Cloud5 from "../../public/banner/9 5.png";
+import Cloud4 from "../../public/banner/9 4.png";
+import HornetBanner from "../../public/banner/Hornet_banner_wide-1-Photoroom 1.png";
 
 const EscenaHornet = () => {
     const hornetRef = useRef<HTMLImageElement>(null);

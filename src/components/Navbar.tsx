@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import TeamCherry from "../assets/navbar/TEAMCHERRY.png";
-import Logo from "../assets/navbar/LOGO.png";
+import TeamCherry from "../../public/navbar/TEAMCHERRY.png";
+import Logo from "../../public/navbar/LOGO.png";
 
 const Navbar: React.FC = () => {
     const logoRef = useRef<HTMLImageElement>(null);
