@@ -168,7 +168,7 @@ const Navbar: React.FC = () => {
             <div ref={navRef} className="flex items-center justify-between max-w-[1920px] w-full mx-auto">
                 {/* IZQUIERDA */}
                 <div className="flex items-center gap-6 md:gap-20">
-                    <img ref={cherryRef} src="../../public/navbar/TEAMCHERRY.png" className="h-14 md:h-15 cursor-pointer" />
+                    <img ref={cherryRef} src="/navbar/TEAMCHERRY.png" className="h-14 md:h-15 cursor-pointer" />
                     <div className="hidden md:flex gap-6 text-white font-trajan text-lg">
                         <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="cursor-pointer pr-8">
                             ABOUT
@@ -181,7 +181,7 @@ const Navbar: React.FC = () => {
 
                 {/* LOGO CENTRADO */}
                 <div className="absolute left-1/2 transform -translate-x-1/2">
-                    <img ref={logoRef} src="../../public/navbar/LOGO.png" className="h-20 md:h-20 cursor-pointer" />
+                    <img ref={logoRef} src="/navbar/LOGO.png" className="h-20 md:h-20 cursor-pointer" />
                 </div>
 
                 {/* DERECHA */}

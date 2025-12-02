@@ -68,7 +68,7 @@ const Escena5: React.FC = () => {
     }, []);
 
     return (
-        <div ref={containerRef} className="min-h-screen relative flex items-center justify-center mt-400 mb-40 bg-contain bg-top bg-no-repeat" style={{ backgroundImage: "url('../../public/fondos/Group30.png')"}}>
+        <div ref={containerRef} className="min-h-screen relative flex items-center justify-center mt-400 mb-40 bg-contain bg-top bg-no-repeat" style={{ backgroundImage: "url('/fondos/Group30.png')"}}>
             <div className="absolute inset-0 bg-black/50"></div>
 
             <h1 ref={text1Ref} style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="Pro absolute top-2 left-70 text-white text-[90px] font-bold z-10">

@@ -66,15 +66,15 @@ const EscenaHornet = () => {
         <div
             className="relative w-full h-210 overflow-hidden flex justify-center items-center"
             style={{
-                backgroundImage: "url('../../public/banner/Rectangle 2.png')",
+                backgroundImage: "url('/banner/Rectangle 2.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
         >
             {/* 🌫️ NUBES BACKGROUND */}
-            <img ref={cloud1Ref} src="../../public/banner/9 5.png" className="absolute top-[8%] left-[5%] w-[350px] opacity-20 pointer-events-none" style={{ zIndex: 2 }} />
+            <img ref={cloud1Ref} src="/banner/9 5.png" className="absolute top-[8%] left-[5%] w-[350px] opacity-20 pointer-events-none" style={{ zIndex: 2 }} />
 
-            <img ref={cloud2Ref} src="../../public/banner/9 4.png" className="absolute top-[55%] right-[10%] w-[400px] opacity-20 pointer-events-none" style={{ zIndex: 2 }} />
+            <img ref={cloud2Ref} src="/banner/9 4.png" className="absolute top-[55%] right-[10%] w-[400px] opacity-20 pointer-events-none" style={{ zIndex: 2 }} />
 
             {/* TEXTO IZQUIERDA */}
             <div ref={leftTextRef} className="absolute left-16 top-1/3.4 -translate-y-1/2 text-white text-6xl font-bold opacity-0 drop-shadow-lg" style={{ zIndex: 5 }}>
