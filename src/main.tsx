@@ -10,10 +10,15 @@ import Navbar from './components/Navbar'
 import Relleno from './components/RellenoRojo'
 import Escena6 from './components/Escena6'
 import Escena7 from './components/Escena7'
+import TimelineSection from './components/Escena1'
+import Relleno2 from './components/Rellenodos'
+import Nubes from './components/Nubes'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Navbar/>
+    <TimelineSection/>
+    <Nubes/>
     <Relleno/>
     <Escena2/>
     <Escena3/>

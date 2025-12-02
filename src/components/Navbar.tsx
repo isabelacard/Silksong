@@ -75,7 +75,8 @@ const Navbar: React.FC = () => {
         // LINKS EFFECT
         links?.forEach((link) => {
             const underline = document.createElement("span");
-            underline.className = "block absolute left-0 bottom-[-4px] h-[2px] bg-white w-0 pointer-events-none";
+            underline.className =
+                "block absolute left-0 bottom-[-4px] h-[2px] bg-white w-0 pointer-events-none";
             link.appendChild(underline);
             link.style.position = "relative";
 
@@ -117,6 +118,7 @@ const Navbar: React.FC = () => {
             });
         });
 
+        // 🌑 NAVBAR FADE AL HACER SCROLL
         const onScroll = () => {
             if (window.scrollY > 20) {
                 navRef.current?.classList.add("scrolled");
@@ -168,12 +170,8 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <div className="flex items-center mr-10 gap-12 text-white font-trajan text-lg">
-                    <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">
-                        ABOUT
-                    </a>
-                    <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] mr-40 cursor-pointer">
-                        CHARACTERS
-                    </a>
+                    <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">ABOUT</a>
+                    <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] mr-40 cursor-pointer">CHARACTERS</a>
                 </div>
 
                 <div className="absolute left-1/2 transform -translate-x-1/2">
@@ -182,12 +180,8 @@ const Navbar: React.FC = () => {
 
                 <div className="flex items-center gap-12 mr-10">
                     <div className="flex gap-12 text-white font-trajan text-lg">
-                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">
-                            HISTORY
-                        </a>
-                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">
-                            MAPS
-                        </a>
+                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">HISTORY</a>
+                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">MAPS</a>
                     </div>
 
                     <button style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} ref={buttonRef} className="relative border-2 border-white text-white px-8 py-2 font-trajan overflow-hidden">

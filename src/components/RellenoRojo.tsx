@@ -1,7 +1,7 @@
 function Relleno (){
 
     return(
-    <div className="h-30 bg-[#660000]">
+    <div className="h-18 bg-[#660000]">
     </div>)
 }
 

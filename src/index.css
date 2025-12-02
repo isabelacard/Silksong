@@ -17,11 +17,11 @@ a, button, input[type="submit"] {
 }
 
 .nav-fade {
-    background: rgba(0, 0, 0, 0);      /* transparente al inicio */
+    background: rgba(0, 0, 0, 0.40);      /* transparente al inicio */
     transition: background 0.8s ease;  /* fade suave */
-    backdrop-filter: blur(6px);        /* opcional */
+    backdrop-filter: blur(2px);        /* opcional */
 }
 
 .nav-fade.scrolled {
-    background: rgba(0, 0, 0, 0.85);   /* aparece el fondo negro */
+    background: rgba(0, 0, 0, 0.20);   /* aparece el fondo negro */
 }

@@ -45,7 +45,7 @@ const Escena3: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen w-full bg-black mt-40">
+        <div className="min-h-screen w-full bg-black mt-20">
             <div>
                 <h1
                     style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }}
