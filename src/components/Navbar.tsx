@@ -164,7 +164,7 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="nav-fade fixed top-0 left-0 w-full z-50 px-8 py-4">
-            <div ref={navRef} className="flex items-center justify-between max-w-[1920px] h-27 mx-auto">
+            <div ref={navRef} className="flex items-center justify-between max-w-[1920px] h-17 mx-auto">
                 <div className="flex items-center ml-10">
                     <img ref={cherryRef} src="../../public/navbar/TEAMCHERRY.png" className="h-13 cursor-pointer" />
                 </div>
