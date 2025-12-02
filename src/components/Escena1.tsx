@@ -1,5 +1,9 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
+import Rectangle2 from "../assets/banner/Rectangle 2.png";
+import Cloud5 from "../assets/banner/9 5.png";
+import Cloud4 from "../assets/banner/9 4.png";
+import HornetBanner from "../assets/banner/Hornet_banner_wide-1-Photoroom 1.png";
 
 const EscenaHornet = () => {
     const hornetRef = useRef<HTMLImageElement>(null);
@@ -66,15 +70,15 @@ const EscenaHornet = () => {
         <div
             className="relative w-full h-210 overflow-hidden flex justify-center items-center"
             style={{
-                backgroundImage: "url('/banner/Rectangle 2.png')",
+                backgroundImage: `url(${Rectangle2})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
         >
             {/* 🌫️ NUBES BACKGROUND */}
-            <img ref={cloud1Ref} src="/banner/9 5.png" className="absolute top-[8%] left-[5%] w-[350px] opacity-20 pointer-events-none" style={{ zIndex: 2 }} />
+            <img ref={cloud1Ref} src={Cloud5} className="absolute top-[8%] left-[5%] w-[350px] opacity-20 pointer-events-none" style={{ zIndex: 2 }} />
 
-            <img ref={cloud2Ref} src="/banner/9 4.png" className="absolute top-[55%] right-[10%] w-[400px] opacity-20 pointer-events-none" style={{ zIndex: 2 }} />
+            <img ref={cloud2Ref} src={Cloud4} className="absolute top-[55%] right-[10%] w-[400px] opacity-20 pointer-events-none" style={{ zIndex: 2 }} />
 
             {/* TEXTO IZQUIERDA */}
             <div ref={leftTextRef} className="absolute left-16 top-1/3.4 -translate-y-1/2 text-white text-6xl font-bold opacity-0 drop-shadow-lg" style={{ zIndex: 5 }}>
@@ -91,7 +95,7 @@ const EscenaHornet = () => {
             {/* 🕷️ HORNET GIGANTE */}
             <img 
                 ref={hornetRef}
-                src="/banner/Hornet_banner_wide-1-Photoroom 1.png"
+                src={HornetBanner}
                 className="w-[700px] pointer-events-none"
                 style={{
                     zIndex: 10,

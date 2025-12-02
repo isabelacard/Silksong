@@ -1,13 +1,26 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Front1 from "../assets/imagesfront/front1.png";
+import Front2 from "../assets/imagesfront/front2.png";
+import Front3 from "../assets/imagesfront/front3.png";
+import Front4 from "../assets/imagesfront/front4.png";
+import Front5 from "../assets/imagesfront/front5.png";
+import Front6 from "../assets/imagesfront/front6.png";
+import Back1 from "../assets/imagesback/back1.png";
+import Back2 from "../assets/imagesback/back2.png";
+import Back3 from "../assets/imagesback/back3.png";
+import Back4 from "../assets/imagesback/back4.png";
+import Back5 from "../assets/imagesback/back5.png";
+import Back6 from "../assets/imagesback/back6.png";
+import Background from "../assets/fondos/Group30.png";
 
 const cards = [
-    { id: 1, imgFront: "/imagesfront/front1.png", imgBack: "/imagesback/back1.png", top: "10%", left: "31%", width: "w-56", height: "h-56" },
-    { id: 2, imgFront: "/imagesfront/front2.png", imgBack: "/imagesback/back2.png", top: "10%", right: "12%", width: "w-120", height: "h-56" },
-    { id: 3, imgFront: "/imagesfront/front6.png", imgBack: "/imagesback/back6.png", top: "45%", left: "12%", width: "w-56", height: "h-56" },
-    { id: 4, imgFront: "/imagesfront/front3.png", imgBack: "/imagesback/back3.png", top: "45%", right: "32%", width: "w-56", height: "h-56" },
-    { id: 5, imgFront: "/imagesfront/front5.png", imgBack: "/imagesback/back5.png", top: "80%", left: "31%", width: "w-56", height: "h-56" },
-    { id: 6, imgFront: "/imagesfront/front4.png", imgBack: "/imagesback/back4.png", top: "80%", right: "13%", width: "w-56", height: "h-56" },
+    { id: 1, imgFront: Front1, imgBack: Back1, top: "10%", left: "31%", width: "w-56", height: "h-56" },
+    { id: 2, imgFront: Front2, imgBack: Back2, top: "10%", right: "12%", width: "w-120", height: "h-56" },
+    { id: 3, imgFront: Front6, imgBack: Back6, top: "45%", left: "12%", width: "w-56", height: "h-56" },
+    { id: 4, imgFront: Front3, imgBack: Back3, top: "45%", right: "32%", width: "w-56", height: "h-56" },
+    { id: 5, imgFront: Front5, imgBack: Back5, top: "80%", left: "31%", width: "w-56", height: "h-56" },
+    { id: 6, imgFront: Front4, imgBack: Back4, top: "80%", right: "13%", width: "w-56", height: "h-56" },
 ];
 
 const Escena5: React.FC = () => {
@@ -68,7 +81,7 @@ const Escena5: React.FC = () => {
     }, []);
 
     return (
-        <div ref={containerRef} className="min-h-screen relative flex items-center justify-center mt-400 mb-40 bg-contain bg-top bg-no-repeat" style={{ backgroundImage: "url('/fondos/Group30.png')"}}>
+        <div ref={containerRef} className="min-h-screen relative flex items-center justify-center mt-400 mb-40 bg-contain bg-top bg-no-repeat" style={{ backgroundImage: `url(${Background})`}}>
             <div className="absolute inset-0 bg-black/50"></div>
 
             <h1 ref={text1Ref} style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="Pro absolute top-2 left-70 text-white text-[90px] font-bold z-10">

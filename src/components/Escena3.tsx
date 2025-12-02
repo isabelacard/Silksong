@@ -1,5 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Card0 from "../assets/gifs/card0.gif";
+import Card1 from "../assets/gifs/card1.gif";
+import Card2 from "../assets/gifs/card2.gif";
+import Card3 from "../assets/gifs/card3.gif";
+import Card4 from "../assets/gifs/card4.gif";
+
+const cards = [Card0, Card1, Card2, Card3, Card4];
 
 const Escena3: React.FC = () => {
     const cardsRef = useRef<HTMLDivElement[]>([]);
@@ -90,7 +97,7 @@ const Escena3: React.FC = () => {
                             ref={(el) => {
                                 if (el) imageRefs.current[i] = el;
                             }}
-                            src={`/gifs/card${i}.gif`}
+                            src={cards[i]}
                             className="absolute top-0 left-0 w-full h-full object-contain rounded-3xl filter grayscale"
                         />
                     </div>
