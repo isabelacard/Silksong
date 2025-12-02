@@ -109,7 +109,6 @@ function Escena2 (){
             initialMainText: string,
             initialSubText: string,
             hoverColor: string = "#E00707", 
-            clickColor: string = "#FFFFFF", 
             clickFilter: string = "drop-shadow(0 0 5px #dc1212)" 
         ) => {
             let isClicked = false; 
@@ -190,27 +189,27 @@ function Escena2 (){
         // Cuadros de Datos (hover y click)
         if (cuadro1Div && c1Img) {
             cleanups.push(setupCuadroInteraction(
-                cuadro1Div, c1Img, 
+                cuadro1Div as HTMLDivElement, c1Img, 
                 setCuadro1MainText, setCuadro1SubText, 
                 "500k Players", "500.000 simultaneous players in Steam",
-                "#e83146", "#ffffff" // Hover rojo, Click verde
+                "#e83146" // Hover rojo
             ));
         }
         // Repite para Cuadro 2 y Cuadro 3 con sus propios refs y estados
         if (cuadro2Div && c2Img) {
             cleanups.push(setupCuadroInteraction(
-                cuadro2Div, c2Img, 
+                cuadro2Div as HTMLDivElement, c2Img, 
                 setCuadro2MainText, setCuadro2SubText, 
                 "3 Million", "Commercial success",
-                "#e83146", "#FFD700" // Hover azul, Click dorado
+                "#e83146" // Hover azul
             ));
         }
         if (cuadro3Div && c3Img) {
             cleanups.push(setupCuadroInteraction(
-                cuadro3Div, c3Img, 
+                cuadro3Div as HTMLDivElement, c3Img, 
                 setCuadro3MainText, setCuadro3SubText, 
                 "Number 1", "The game dominated all the scene",
-                "#e83146", "#8A2BE2" // Hover naranja, Click púrpura
+                "#e83146" // Hover naranja
             ));
         }
 
