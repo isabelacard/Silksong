@@ -161,7 +161,7 @@ function Escena6() {
             </p>
             </div>
 
-            <div className="relative flex justify-center top-20">
+            <div className="relative flex justify-center top-15">
 
                 <p
                 ref={text3Ref}

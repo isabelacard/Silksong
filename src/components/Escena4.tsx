@@ -82,7 +82,7 @@ const Escena3: React.FC = () => {
                 <p style={{ fontFamily: "Trajan Pro", fontWeight: "900" }} className="text-[#E00707] text-5xl font-bold flex justify-end">History</p>
             </div>
             
-            <div className="bg-black min-h-screen flex flex-col items-center justify-center -mt-15">
+            <div className="bg-black min-h-screen flex flex-col items-center justify-center -mt-19">
                 
                 <div ref={block1Ref} className="flex flex-row gap-7 justify-center items-center absolute cursor-pointer">
                     <div className="flex flex-col text-right">
