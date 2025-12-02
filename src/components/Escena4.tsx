@@ -79,7 +79,7 @@ const Escena3: React.FC = () => {
         <div className=" mt-18">
             <div>
                 <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-6xl flex justify-end mr-50">Pharloom</p>
-                <p className="text-[#E00707] text-5xl font-bold flex justify-end mr-50">History</p>
+                <p style={{ fontFamily: "Trajan Pro", fontWeight: "900" }} className="text-[#E00707] text-5xl font-bold flex justify-end mr-50">History</p>
             </div>
             
             <div className="bg-black min-h-screen flex flex-col items-center justify-center ">
@@ -87,11 +87,11 @@ const Escena3: React.FC = () => {
                 <div ref={block1Ref} className="flex flex-row gap-7 justify-center items-center absolute cursor-pointer">
                     <div className="flex flex-col text-right">
                         <div className="flex flex-col js-title">
-                            <p className="text-white text-5xl font-medium">The Rise of</p>
-                            <p className="text-white text-5xl font-medium">the Citadel</p>
+                            <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-4xl font-medium">The Rise of</p>
+                            <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-3xl font-medium">the Citadel</p>
                         </div>
                         <div className="js-text">
-                            <p className="text-white w-60 text-[13px] mt-5">
+                            <p style={{ fontFamily: "Poppins", fontWeight: "200", textAlign: "justify"}} className="text-white w-60 text-[12px] mt-5">
                                 The creation and flourishing of the Pharloom Citadel. This was the
                                 moment of greatest cultural and technological splendor for the
                                 Silk Road civilization, with the construction of the Great Needle
@@ -106,11 +106,11 @@ const Escena3: React.FC = () => {
                     <img src={Imagen2} alt="Carmelita" className="w-100 h-auto js-image" />
                     <div className="flex flex-col text-left">
                         <div className="flex flex-col js-title">
-                            <p className="text-white text-5xl font-medium">Hornet's</p>
-                            <p className="text-white text-5xl font-medium">Exile</p>
+                            <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-4xl font-medium">Hornet's</p>
+                            <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-3xl font-medium">Exile</p>
                         </div>
                         <div className="js-text">
-                            <p className="text-white w-60 text-[13px] mt-5">
+                            <p style={{ fontFamily: "Poppins", fontWeight: "200", textAlign: "justify"}} className="text-white w-60 text-[12px] mt-5">
                                 Hornet is captured (or exiled) from her original world and
                                 transported to the kingdom of Pharloom. This event serves as the
                                 game's starting point and introduces her as an outsider in the new
@@ -123,11 +123,11 @@ const Escena3: React.FC = () => {
                 <div ref={block3Ref} className="flex flex-row justify-center items-center absolute mt-410 z-2 cursor-pointer">
                     <div className="flex flex-col text-right items-end">
                         <div className="flex flex-col js-title">
-                            <p className="text-white text-5xl font-medium">The Appearance</p>
-                            <p className="text-white text-5xl font-medium">of the Hunters</p>
+                            <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-4xl font-medium">The Appearance</p>
+                            <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-3xl font-medium">of the Hunters</p>
                         </div>
                         <div className="js-text">
-                            <p className="text-white w-60 text-[13px] mt-5">
+                            <p style={{ fontFamily: "Poppins", fontWeight: "200", textAlign: "justify"}} className="text-white w-60 text-[12px] mt-5">
                                 The emergence of a sect or group that pursues Hornet or plays an 
                                 antagonistic role in her journey represents the central conflict 
                                 and the direct threat within the citadel. Silk Road civilization, 
@@ -141,13 +141,13 @@ const Escena3: React.FC = () => {
 
                 <div ref={block4Ref} className="flex flex-row gap-7 justify-center items-center absolute mt-610 z-1 cursor-pointer">
                     <img src={Imagen4} alt="seth" className="w-100 h-auto js-image" />
-                    <div className="flex flex-col text-left">
+                    <div className="flex flex-col text-left mb-10">
                         <div className="flex flex-col js-title">
-                            <p className="text-white text-5xl font-medium">Origin of</p>
-                            <p className="text-white text-5xl font-medium">Silk</p>
+                            <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-4xl font-medium">Origin of</p>
+                            <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-3xl font-medium">Silk</p>
                         </div>
                         <div className="js-text">
-                            <p className="text-white w-60 text-[13px] mt-5">
+                            <p style={{ fontFamily: "Poppins", fontWeight: "200", textAlign: "justify"}} className="text-white w-60 text-[12px] mt-5">
                                 A crucial point where the truth about the material that gives 
                                 life to the kingdom (silk), its source, and its connection to 
                                 Pharloom's darkest history is revealed. It could be linked to 
@@ -158,12 +158,12 @@ const Escena3: React.FC = () => {
                 </div>
 
                 <div ref={block5Ref} className="flex flex-row gap-7 justify-center items-center absolute mt-810 cursor-pointer">
-                    <div className="flex flex-col text-right items-end mb-30">
+                    <div className="flex flex-col text-right items-end mb-10">
                         <div className="flex flex-col js-title">
-                            <p className="text-white text-5xl font-medium">The Awakening </p>
+                            <p style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-4xl font-medium">The Awakening </p>
                         </div>
                         <div className="js-text">
-                            <p className="text-white w-60 text-[13px] mt-5">
+                            <p style={{ fontFamily: "Poppins", fontWeight: "200", textAlign: "justify"}} className="text-white w-60 text-[12px] mt-5">
                                 The culmination of Hornet's journey, where she confronts the 
                                 kingdom's central threat and decides Pharloom's fate, whether 
                                 by awakening a dormant figure, restoring order, or stopping 

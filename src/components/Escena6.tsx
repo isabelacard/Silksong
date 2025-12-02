@@ -142,7 +142,7 @@ function Escena6() {
 
 
     return (
-        <div className="w-100% h-[150vh] bg-black overflow-hidden mr-40 ml-40 mt-70 mb-20">
+        <div className="w-100% h-[150vh] bg-black overflow-hidden mr-40 ml-40 mt-70 mb-0">
             <div className="flex justify-end gap-6">
             <p  
                 ref={text1Ref}

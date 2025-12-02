@@ -46,7 +46,32 @@ const Escena3: React.FC = () => {
 
     return (
         <div className="min-h-screen w-full bg-black mt-40">
-            <h1  style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-white text-6xl flex justify-center items-center text-center">Our world, <br /> Our Characters</h1>
+            <div>
+                <h1
+                    style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }}
+                    className="
+            text-white text-6xl flex justify-center items-center text-center
+            transition-all duration-300
+            hover:text-red-600
+            hover:drop-shadow-[0_0_12px_rgba(255,0,0,0.8)]
+        "
+                >
+                    Our world,
+                </h1>
+
+                <h1
+                    style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }}
+                    className="
+            text-white text-6xl flex justify-center items-center text-center
+            transition-all duration-300
+            hover:text-red-600
+            hover:drop-shadow-[0_0_12px_rgba(255,0,0,0.8)]
+        "
+                >
+                    Our characters
+                </h1>
+            </div>
+
             <div className="flex items-center justify-center p-[2vw] mt-10 gap-[2vw] cursor-pointer">
                 {[0, 1, 2, 3, 4].map((i) => (
                     <div

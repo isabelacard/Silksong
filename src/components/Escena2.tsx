@@ -357,7 +357,7 @@ function Escena2 (){
                         />
 
                         <p
-                            style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
+                            style={{ fontFamily: "Poppins", fontWeight: "400"}}
                             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-[0.8vw] whitespace-nowrap"
                         >
                             View More
@@ -367,7 +367,7 @@ function Escena2 (){
                     {/* Párrafo 1 con hover */}
                     <p
                         ref={textRef1}
-                        style={{ fontFamily: "Poppins", fontWeight:"Thin" }} 
+                        style={{ fontFamily: "Poppins", fontWeight: "400"}}
                         className="absolute bottom-[77vh] z-11 text-[0.6vw] left-[60vw] w-[18vw] text-white cursor-pointer"
                     >
                         Hollow Knight: Silksong has secured a major Game of the Year "GOTY" 
