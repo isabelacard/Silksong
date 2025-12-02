@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import Card0 from "../public/gifs/card0.gif";
-import Card1 from "../public/gifs/card1.gif";
-import Card2 from "../public/gifs/card2.gif";
-import Card3 from "../public/gifs/card3.gif";
-import Card4 from "../public/gifs/card4.gif";
+import Card0 from "../../public/gifs/card0.gif";
+import Card1 from "../../public/gifs/card1.gif";
+import Card2 from "../../public/gifs/card2.gif";
+import Card3 from "../../public/gifs/card3.gif";
+import Card4 from "../../public/gifs/card4.gif";
 
 const cards = [Card0, Card1, Card2, Card3, Card4];
 
