@@ -30,7 +30,6 @@ const Navbar: React.FC = () => {
 
         // BUTTON HOVER
         const btn = buttonRef.current;
-
         btn?.addEventListener("mouseenter", () => {
             gsap.to(btn, {
                 scale: 1.12,
@@ -41,16 +40,18 @@ const Navbar: React.FC = () => {
 
             const ring = document.createElement("span");
             ring.className = "energy-ring";
-            ring.style.position = "absolute";
-            ring.style.left = "50%";
-            ring.style.top = "50%";
-            ring.style.transform = "translate(-50%, -50%)";
-            ring.style.width = "0px";
-            ring.style.height = "0px";
-            ring.style.border = "2px solid white";
-            ring.style.borderRadius = "50%";
-            ring.style.opacity = "0.8";
-            ring.style.pointerEvents = "none";
+            Object.assign(ring.style, {
+                position: "absolute",
+                left: "50%",
+                top: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "0px",
+                height: "0px",
+                border: "2px solid white",
+                borderRadius: "50%",
+                opacity: "0.8",
+                pointerEvents: "none",
+            });
             btn.appendChild(ring);
 
             gsap.to(ring, {
@@ -75,8 +76,7 @@ const Navbar: React.FC = () => {
         // LINKS EFFECT
         links?.forEach((link) => {
             const underline = document.createElement("span");
-            underline.className =
-                "block absolute left-0 bottom-[-4px] h-[2px] bg-white w-0 pointer-events-none";
+            underline.className = "block absolute left-0 bottom-[-4px] h-[2px] bg-white w-0 pointer-events-none";
             link.appendChild(underline);
             link.style.position = "relative";
 
@@ -118,7 +118,6 @@ const Navbar: React.FC = () => {
             });
         });
 
-        // 🌑 NAVBAR FADE AL HACER SCROLL
         const onScroll = () => {
             if (window.scrollY > 20) {
                 navRef.current?.classList.add("scrolled");
@@ -134,16 +133,18 @@ const Navbar: React.FC = () => {
     const spawnParticles = (parent: HTMLElement, amount: number, color: string) => {
         for (let i = 0; i < amount; i++) {
             const p = document.createElement("span");
-            p.style.position = "absolute";
-            p.style.left = "50%";
-            p.style.top = "50%";
-            p.style.width = `${3 + Math.random() * 5}px`;
-            p.style.height = `${3 + Math.random() * 5}px`;
-            p.style.background = color;
-            p.style.borderRadius = "50%";
-            p.style.opacity = "1";
-            p.style.filter = "blur(1.5px)";
-            p.style.pointerEvents = "none";
+            Object.assign(p.style, {
+                position: "absolute",
+                left: "50%",
+                top: "50%",
+                width: `${3 + Math.random() * 5}px`,
+                height: `${3 + Math.random() * 5}px`,
+                background: color,
+                borderRadius: "50%",
+                opacity: "1",
+                filter: "blur(1.5px)",
+                pointerEvents: "none",
+            });
 
             parent.appendChild(p);
 
@@ -163,28 +164,41 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <nav className="nav-fade fixed top-0 left-0 w-full z-50 px-8 py-4">
-            <div ref={navRef} className="flex items-center justify-between max-w-[1920px] h-17 mx-auto">
-                <div className="flex items-center ml-10">
-                    <img ref={cherryRef} src="../../public/navbar/TEAMCHERRY.png" className="h-13 cursor-pointer" />
-                </div>
-
-                <div className="flex items-center mr-10 gap-12 text-white font-trajan text-lg">
-                    <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">ABOUT</a>
-                    <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] mr-40 cursor-pointer">CHARACTERS</a>
-                </div>
-
-                <div className="absolute left-1/2 transform -translate-x-1/2">
-                    <img ref={logoRef} src="../../public/navbar/LOGO.png" className="h-20 cursor-pointer" />
-                </div>
-
-                <div className="flex items-center gap-12 mr-10">
-                    <div className="flex gap-12 text-white font-trajan text-lg">
-                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">HISTORY</a>
-                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="text-[18px] cursor-pointer">MAPS</a>
+        <nav className="nav-fade fixed top-0 left-0 w-full z-50 px-4 py-4">
+            <div ref={navRef} className="flex items-center justify-between max-w-[1920px] w-full mx-auto">
+                {/* IZQUIERDA */}
+                <div className="flex items-center gap-6 md:gap-20">
+                    <img ref={cherryRef} src="../../public/navbar/TEAMCHERRY.png" className="h-14 md:h-15 cursor-pointer" />
+                    <div className="hidden md:flex gap-6 text-white font-trajan text-lg">
+                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="cursor-pointer pr-8">
+                            ABOUT
+                        </a>
+                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="cursor-pointer">
+                            CHARACTERS
+                        </a>
                     </div>
+                </div>
 
-                    <button style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} ref={buttonRef} className="relative border-2 border-white text-white px-8 py-2 font-trajan overflow-hidden">
+                {/* LOGO CENTRADO */}
+                <div className="absolute left-1/2 transform -translate-x-1/2">
+                    <img ref={logoRef} src="../../public/navbar/LOGO.png" className="h-20 md:h-20 cursor-pointer" />
+                </div>
+
+                {/* DERECHA */}
+                <div className="flex items-center gap-12 md:gap-20">
+                    <div className="hidden md:flex gap-6 text-white font-trajan text-lg">
+                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="cursor-pointer pr-8">
+                            HISTORY
+                        </a>
+                        <a style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }} className="cursor-pointer">
+                            MAPS
+                        </a>
+                    </div>
+                    <button
+                        ref={buttonRef}
+                        className="relative border-2 border-white text-white px-6 py-2 font-trajan overflow-hidden hover:bg-white hover:text-black transition-colors duration-300"
+                        style={{ fontFamily: "Trajan Pro", fontWeight: "bold" }}
+                    >
                         DOWNLOAD
                     </button>
                 </div>
